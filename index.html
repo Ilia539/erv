@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+
+</head>
+<body>
+  <div class="wrapper">
+    <!-- .................HEADER.............. -->
+    <header class="header">
+      <div class="header__body">
+        <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <!-- <i class="fas fa-bars"></i> -->
+            <svg class="fas fa-bars" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+          </label>
+        <div class="header__image">
+          <img src="img/intro/logo-header.svg" alt="llogo">
+        </div>
+
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#!" class="header__link">Купить полис</a>
+            </li>
+
+            <li class="header__item">
+              <a href="#!" class="header__link">Продукты</a>
+            </li>
+
+            <li class="header__item">
+              <a href="#!" class="header__link">О компании</a>
+            </li>
+
+            <li class="header__item">
+              <a href="#!" class="header__link">Страховой случай</a>
+            </li>
+
+            <li class="header__item">
+              <a href="#!" class="header__link">Партнерам</a>
+            </li>
+
+            <li class="header__item">
+              <a href="#!" class="header__link">Контакты</a>
+            </li>
+          </ul>
+
+          <button class="header__button btn">Вход для агентов</button>
+        </nav>
+      </div>
+    </header>
+    <!-- ...............SECTION  INTRO.......... -->
+    <section class="intro">
+      <div class="intro__item">
+        <img src="img/intro/bg-banner1.jpg" alt="egpt">
+      </div>
+
+      <div class="intro__item">
+        <img src="img/intro/bg-banner2.jpg" alt="egpt">
+      </div>
+
+      <div class="intro__item">
+        <img src="img/intro/bg-banner3.jpg" alt="egpt">
+      </div>
+      <div class="intro__item">
+        <img src="img/intro/bg-banner.jpg" alt="egpt">
+      </div>
+
+      <div class="intro__content">
+        <div class="container">
+          <div class="intro__content-wrap">
+              <h1 class="itro__content-title">Страховка для путешествий в Египет</h1>
+              <p class="intro__content-subtitle">Рассчитать и оформить туристическую страховку</p>
+
+              <div class="into__content-body">
+
+                <div class="intro__form">
+                  <form class="intro__form-body" autocomplete="off" method="GET">
+
+                      <div class="intro__form-search">
+                        <label class="intro__label-text" for="country">Страна</label>
+                        <div class="intro__search-dropdown">
+                          <div data-select class="intro__select">
+                            <div data-select-top class="intro__select-top">Выбрать страну</div>
+                            <div class="intro__select-dropdown hidden">
+                              <div data-select-item="Египет" class="intro__select-dropdown-item">Египет</div>
+                              <div data-select-item="Россия" class="intro__select-dropdown-item">Россия</div>
+                              <div data-select-item="Украина" class="intro__select-dropdown-item">Украина</div>
+                              <div data-select-item="Беларусь" class="intro__select-dropdown-item">Беларусь</div>
+                            </div>
+                          </div>
+                        </div>
+                        <select data-select-real class="hidden" name="select" id="" value="none">
+                          <option value="Выбрать страну">Выбрать страну</option>
+                          <option value="Египет">Египет</option>
+                          <option value="Россия">Россия</option> 
+                          <option value="Украина">Украина</option> 
+                          <option value="Беларусь">Беларусь</option> 
+                        </select>
+                      </div>
+
+                      <div class="intro__form-date">
+                        <div class="intro__form-input date-on">
+                          <label for="on" class="intro__label-text">Туда</label>
+                          <div class="intro__input-dropdown">
+                            <div class="intro-input">
+                              <input type="text" class="intro-input__body on-date" placeholder="..." id="on-date">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="intro__form-input date-off">
+                          <label for="off" class="intro__label-text">Обратно</label>
+                          <div class="intro__input-dropdown">
+                            <div class="intro-input">
+                              <input type="text" class="intro-input__body off-date" placeholder="..." id="off-date">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="intro__form-button">
+                        <div class="intro__form-price">
+                          <p><gt>от</gt> <span class="form-price">1500</span> <span>&#8381</span></p>
+                        </div>
+                        <button type="" class="intro__form-btn" id="intbtn">Купить онлайн</button>
+                      </div>
+                  </form>
+                </div>
+
+                <div class="intro__card">
+                  <div class="ntro__card-body">
+                    <div class="intro__card-convert">
+                      <div class="intro__card-supitem">Валюта</div>
+                      <div class="intro__card-item">Египетский фунт (EGP)
+                        </div>
+                      <div class="intro__card-subitem">≈ 5 &#8381</div>
+                    </div>
+                    <div class="intro__card-visa">
+                      <div class="intro__card-supitem">Виза</div>
+                      <div class="intro__card-item">Не нужна
+                        </div>
+                    </div>
+                    <div class="intro__card-rating">
+                      
+                      <fieldset class="intro-rating">
+                        <legend class="intro-rating__caption">Красота пирамид</legend>
+                        <div class="intro-rating__group">
+                          <input class="intro-rating__item" type="radio" name="healt" value="1" aria-label="Так">
+                          <input class="intro-rating__item" type="radio" name="healt" value="2" aria-label="Ничего">
+                          <input class="intro-rating__item" type="radio" name="healt" value="3" aria-label="Норм">
+                          <input class="intro-rating__item" type="radio" name="healt" value="4" aria-label="Лучше" checked>
+                          <input class="intro-rating__item" type="radio" name="healt" value="5" aria-label="Отл">
+                        </div>
+                      </fieldset>
+                      <div class="intro__card-subitem">≈ 79 анджелиноджоулей</div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="intro__covid">
+                  <div class="intro__covid-icon">
+                    <img src="img/intro/covid-icon.svg" alt="icon-covid">
+                  </div>
+                  <div class="intro__covid-text">
+                    <h4>Да, <br>   <span>мы покрываем COVID-19</span> </h4>
+                  </div>
+                  <a href="#!" class="intro__covid-link">
+                    <svg class="covid-icon" width="20" height="20" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg">
+                      <path class="covid-icon" d="M10 0.25C8.1901 0.25 6.51693 0.699219 4.98047 1.59766C3.44401 2.48307 2.22656 3.69401 1.32812 5.23047C0.442708 6.76693 0 8.4401 0 10.25C0 12.0599 0.442708 13.7331 1.32812 15.2695C2.22656 16.806 3.44401 18.0234 4.98047 18.9219C6.51693 19.8073 8.1901 20.25 10 20.25C11.3542 20.25 12.6497 19.9831 13.8867 19.4492C15.1237 18.9284 16.1849 18.2253 17.0703 17.3398C17.9688 16.4414 18.6784 15.3737 19.1992 14.1367C19.7331 12.8997 20 11.6042 20 10.25C20 8.89583 19.7331 7.60026 19.1992 6.36328C18.6784 5.1263 17.9688 4.0651 17.0703 3.17969C16.1849 2.28125 15.1237 1.57161 13.8867 1.05078C12.6497 0.516927 11.3542 0.25 10 0.25ZM10 19.0195C9.04948 19.0195 8.125 18.8763 7.22656 18.5898C6.34115 18.2904 5.54036 17.8672 4.82422 17.3203C4.10807 16.7734 3.47656 16.1419 2.92969 15.4258C2.39583 14.7096 1.97917 13.9089 1.67969 13.0234C1.39323 12.125 1.25 11.2005 1.25 10.25C1.25 9.0651 1.47786 7.93229 1.93359 6.85156C2.40234 5.77083 3.02734 4.83984 3.80859 4.05859C4.58984 3.27734 5.52083 2.65885 6.60156 2.20312C7.68229 1.73438 8.8151 1.5 10 1.5C11.1849 1.5 12.3177 1.73438 13.3984 2.20312C14.4792 2.65885 15.4102 3.27734 16.1914 4.05859C16.9727 4.83984 17.5911 5.77083 18.0469 6.85156C18.5156 7.93229 18.75 9.0651 18.75 10.25C18.75 11.4349 18.5156 12.5677 18.0469 13.6484C17.5911 14.7292 16.9727 15.6667 16.1914 16.4609C15.4102 17.2422 14.4792 17.8672 13.3984 18.3359C12.3177 18.7917 11.1849 19.0195 10 19.0195ZM9.08203 15.875H10.6445V14.293H9.08203V15.875ZM9.98047 4.625C9.79818 4.625 9.6224 4.63802 9.45312 4.66406C9.28385 4.67708 9.12109 4.70312 8.96484 4.74219C8.80859 4.78125 8.65885 4.83333 8.51562 4.89844C8.3724 4.95052 8.22917 5.01562 8.08594 5.09375C7.95573 5.17188 7.83203 5.25651 7.71484 5.34766C7.44141 5.58203 7.22656 5.92057 7.07031 6.36328C6.91406 6.79297 6.84245 7.22266 6.85547 7.65234L6.875 7.71094H8.32031C8.32031 7.4375 8.35938 7.15755 8.4375 6.87109C8.52865 6.58464 8.65234 6.38281 8.80859 6.26562C8.96484 6.13542 9.14062 6.03776 9.33594 5.97266C9.53125 5.90755 9.74609 5.875 9.98047 5.875C10.2539 5.875 10.4883 5.91406 10.6836 5.99219C10.8919 6.07031 11.0677 6.18099 11.2109 6.32422C11.4974 6.61068 11.6406 7.02083 11.6406 7.55469C11.6406 7.78906 11.6146 8.00391 11.5625 8.19922C11.5104 8.38151 11.4323 8.55729 11.3281 8.72656C11.1068 9.03906 10.7487 9.49479 10.2539 10.0938C9.73307 10.5625 9.40755 10.9401 9.27734 11.2266C9.16016 11.513 9.10156 12.0208 9.10156 12.75H10.6055C10.6055 12.2943 10.6315 11.9557 10.6836 11.7344C10.7096 11.6302 10.7617 11.5195 10.8398 11.4023C10.931 11.2721 11.0482 11.1354 11.1914 10.9922C11.4779 10.7057 11.7383 10.4258 11.9727 10.1523C12.2201 9.86589 12.4349 9.59245 12.6172 9.33203C12.9688 8.78516 13.1445 8.17969 13.1445 7.51562C13.1445 6.60417 12.8646 5.89453 12.3047 5.38672C11.7578 4.87891 10.9831 4.625 9.98047 4.625Z"/>
+                      </svg>
+                  </a>
+                </div>
+                
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- .......SECTION LIST............... -->
+    <section class="list">
+      <div class="container">
+        <h3 class="list__title">Все ок, вы застрахованы.</h3>
+
+        <div class="list__wrap">
+
+          <div class="list__inner">
+
+            <div class="list__column">
+              <div class="list__item">
+                <div class="list__item-img">
+                  <img src="img/list/icon01.svg" alt="icon1">
+                </div>
+                <div class="list__item-content">
+                  <h4 class="list__item-title">Амбулаторное <br> и стационарное лечение</h4>
+                  <p class="list__item-text">Возместим расходы на посещение врача или лечение в стационаре</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="list__column">
+              <div class="list__item">
+                <div class="list__item-img">
+                  <img src="img/list/icon02.svg" alt="icon1">
+                </div>
+                <div class="list__item-content">
+                  <h4 class="list__item-title">Хронические заболевания</h4>
+                  <p class="list__item-text">Экстренная помощь при обострении хронических заболеваний, аллергии <br>и солнечных ожогах.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="list__column">
+              <div class="list__item">
+                <div class="list__item-img">
+                  <img src="img/list/icon03.svg" alt="icon1">
+                </div>
+                <div class="list__item-content">
+                  <h4 class="list__item-title">Опасные инфекции
+                  </h4>
+                  <p class="list__item-text">
+                    Оплатим лечение при коронавирусной инфекции, а также проживание <br> в случае задержки в поездке <br>из-за каранитнного заболевания
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="list__column">
+              <div class="list__item">
+                <div class="list__item-img">
+                  <img src="img/list/icon04.svg" alt="icon1">
+                </div>
+                <div class="list__item-content">
+                  <h4 class="list__item-title">Лекарства по рецепту
+                  </h4>
+                  <p class="list__item-text">
+                    Если врач пропишет лекарства,<br> то мы возместим расходы на их приобретение
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- .......SECTION ADVICE........ -->
+    <section class="advice">
+      <div class="advice__grayshe">
+        <div class="container">
+          <div class="advice__inner-grayish">
+            <div class="advice__card-right">
+              <div class="advice__card-content-x">
+                <div class="advice__card-body">
+                  <h4 class="advice__card-body-title">Сосредоточьтесь на путешествии</h4>
+                  <p class="advice__card-body-subtitle">Все программы ERV устроены так, чтобы вы могли спокойно путешествовать не думая о страховке. Чтобы вы были уверены, мы предусмотрели основные риски:</p>
+                  <ul class="advice__card-list">
+                    <li class="advice__card-item">амбулаторное и стационарное лечение;</li>
+                    <li class="advice__card-item">экстренная стоматология;</li>
+                    <li class="advice__card-item">медико-транспортные расходы;</li>
+                    <li class="advice__card-item">поисково спасательные мероприятия (включая спасательный вертолет)</li>
+                  </ul>
+                  <span>… и многое другое.</span>
+                  <p>
+                    При оформлении полиса покажем весь перечень покрываемых рисков и вы легко выберите продходящую программу.
+                  </p>
+                </div>
+              </div>
+              <div class="advice__card-image">
+                <div class="advice__card-imgBx">
+                  <img src="img/advice/business-map1Sq2.png" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="advice__card-left card-bike">
+              <div class="advice__card-image image-left">
+                <div class="advice__card-imgBybike">
+                  <img src="img/advice/tiny-2.png" alt="">
+                </div>
+              </div>
+              <div class="advice__card-content-y">
+                <div class="advice__card-body body-left">
+                  <h4 class="advice__card-body-title">Активный отдых</h4>
+                  <p class="advice__card-body-subtitle">
+                    Необязательно все время лежать на пляже. Поэтому во всех программах ERV, по умолчанию, без переплат и оговорок, покрывается активный отдых:
+                  </p>
+                  <ul class="advice__card-list">
+                    <li class="advice__card-item">активности на море и/или бассейне, пляжные развлечения, развлечения в отелях, парках, аттракционы;</li>
+                    <li class="advice__card-item">
+                      пешие прогулки, катание на беговых лыжах, экскурсии, походы, в т. ч. с участием животных;
+                    </li>
+                    <li class="advice__card-item">
+                      передвижение на роликовых коньках, велосипедах, мотобайках, автомобилях, самокатах, скутерах и аналогичных видах транспорта с учетом требований безопасности;
+                    </li>
+                    <li class="advice__card-item">
+                      передвижения в качестве пассажира, экскурсанта на самолетах, яхтах, катерах, лодках, автомобилях и пр.;
+                    </li>
+                    <li class="advice__card-item">
+                      сплавы по рекам (экскурсионно-туристический рафтинг), рыбалка.
+                    </li>
+                  </ul>
+                  
+                  <p>
+                    И еще множество активностей и развлечений. 
+                  </p>
+                  <p>
+                    Не ограничивайте себя!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="advice__card-right card-pin">
+              <div class="advice__card-content-x">
+                <div class="advice__card-body">
+                  <h4 class="advice__card-body-title">Спортивный и экстремальный отдых</h4>
+                  <p class="advice__card-body-subtitle">
+                    Любите горнолыжные склоны? Или исследования морских глубин? Без проблем, ведь у ERV есть страховки и для такого отдыха. Приобретает я опционально.
+                  </p>
+                  
+                  <p>
+                    Прыжки с парашютом, полеты на дельтаплане или параплане, альпинизм, участие в соревнованиях, кстати, тоже можно застраховать.
+                  </p>
+                </div>
+              </div>
+              <div class="advice__card-image card-pin-img">
+                <div class="advice__card-imgBx">
+                  <img src="img/advice/tiny-3.png" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="advice__card-left card-pin">
+              <div class="advice__card-image image-left">
+                <div class="advice__card-imgBy">
+                  <img src="img/advice/tiny-4.png" alt="">
+                </div>
+              </div>
+              <div class="advice__card-content-y">
+                <div class="advice__card-body body-left">
+                  <h4 class="advice__card-body-title">COVID-19 уже в страховке</h4>
+                  <p class="advice__card-body-text">
+                    Заболевание коронавирусом покрываем в любой программе ERV. Оплатим консультации врачей, лечение в больнице, анализы, а также медико-транспортные расходы. И все это — в пределах страховой суммы.
+                  </p>
+                </div>
+              </div>
+            </div>
+              
+            
+          </div>
+          
+        </div>
+      </div>
+
+
+      <div class="advice__white">
+        <div class="container">
+          <div class="advice__inner-white">
+
+            <div class="advice__card-right card-pin">
+              <div class="advice__card-content-x">
+                <div class="advice__card-body">
+                  <h4 class="advice__card-body-title">Это далеко не все!</h4>
+                  <p class="advice__card-body-subtitle">
+                    Никто не знает, что может случиться в путешествии. <br>Поэтому даже в стандартной страховке ERV вы будете застрахованы <br>на случай:
+                  </p>
+                  
+                  <ul class="advice__card-list">
+                    <li class="advice__card-item">хронических заболеваний (без скрытых лимитов);</li>
+                    <li class="advice__card-item">осложнения беременности;</li>
+                    <li class="advice__card-item">преждевременные роды и помощь новорожденному (в программе OPTIMA);</li>
+                    <li class="advice__card-item">медицинская помощь при алкогольном опъянении (в программе OPTIMA);</li>
+                    <li class="advice__card-item">солнечных ожогов и аллергии;</li>
+                    <li class="advice__card-item">терактов и стихийных бедствий;</li>
+                    <li class="advice__card-item">укусов всего, что бегает, летает, ползает и плавает;</li>
+                    <li class="advice__card-item">опасных инфекций, а также тропических лихорадок всех видов.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="advice__card-image card-pin-img">
+                <div class="advice__card-imgBx">
+                  <img src="img/advice/knife1.png" alt="knife">
+                </div>
+              </div>
+            </div>
+
+            <div class="advice__card-left card-suitcase">
+              <div class="advice__card-image image-suitcase">
+                <div class="advice__card-imgBx">
+                  <img src="img/advice/suitcase.png" alt="">
+                </div>
+              </div>
+              <div class="advice__card-content-y">
+                <div class="advice__card-body body-left">
+                  <h4 class="advice__card-body-title">Не только медицина</h4>
+                  <p class="advice__card-body-subtitle">
+                    Самолеты не всегда вылетают вовремя. Багаж могут задержать. Паспорт затеряется где-то на просторах заграничного города. Но и на такие случаи у ERV есть решения.
+                  </p>
+                  <h5 class="advice__card-body-litltitle">Во всех программах:</h5>
+                  <ul class="advice__card-list">
+                    <li class="advice__card-item">компенсируем задержку регулярного авиарейса более чем на 3 часа</li>
+                    <li class="advice__card-item">возместим расходы при утрате документов</li>
+                  </ul>
+                  <h5 class="advice__card-body-litltitle">В программе OPTIMA:</h5>
+                  <ul class="advice__card-list">
+                    <li class="advice__card-item">
+                      выплатим компенсацию в случае задержки, повреждения или утраты багажа</li>
+                    <li class="advice__card-item">
+                      моментальные онлайн-выплаты при задержке ругалярного авиарейса.
+                    </li>
+                    <li class="advice__card-item">
+                      гражданская ответственность;
+                    </li>
+                    <li class="advice__card-item">
+                      страхование от несчастного случая.
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+
+            <button type="" class="intro__form-btn cls-btn" id="intbtn">Рассчитать стоимость страховки</button>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ,,,,,,,,,,,,,SECTION BENEFITS............... -->
+    <section class="benefits">
+      <div class="benefits__overlay">
+        <div class="container">
+          <h2 class="benefits__title">Почему нужно страховаться в ERV</h2>
+
+          <div class="benefits__inner">
+
+            <div class="benefits__column">
+              <div class="benefits__item">
+
+                <div class="benefits__item-img">
+                  <img src="img/benefis/Icon01.svg" alt="icon1">
+                </div>
+                <div class="benefits__item-content">
+                  <h4 class="benefits__item-title">
+                    Для любого путешествия
+                  </h4>
+                  <p class="benefits__item-text">
+                    Пляжный отдых, экскурсии, круизы, занятие спортом — не ограничивайте себя в фантзиях! Просто путешествуйте с нашим полисом, а мы позаботимся обо всем остальном.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="benefits__column">
+              <div class="benefits__item">
+
+                <div class="benefits__item-img">
+                  <img src="img/benefis/icon02.svg" alt="icon1">
+                </div>
+                <div class="benefits__item-content">
+                  <h4 class="benefits__item-title">
+                    На море, в горах, в пустыне
+                  </h4>
+                  <p class="benefits__item-text">
+                    Где бы не произошел страховой случай, мы оплатим поиск и спасение застрахованного. Даже если для этого понадобится вызвать вертолет. И оплатим возвращение домой.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="benefits__column">
+              <div class="benefits__item">
+
+                <div class="benefits__item-img">
+                  <img src="img/benefis/icon03.svg" alt="icon1">
+                </div>
+                <div class="benefits__item-content">
+                  <h4 class="benefits__item-title">
+                    Без возрастных ограничений
+                  </h4>
+                  <p class="benefits__item-text">
+                    Одному из наших клиентов 99 лет и он заядлый путешественник. А кроме этого мы не увеличиваем стоимость полиса для детей.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="benefits__column">
+              <div class="benefits__item">
+
+                <div class="benefits__item-img">
+                  <img src="img/benefis/icon04.svg" alt="icon1">
+                </div>
+                <div class="benefits__item-content">
+                  <h4 class="benefits__item-title">
+                    Страхование, которое...
+                  </h4>
+                  <p class="benefits__item-text">
+                    Работает при обострении хронических заболеваний, нападениях акул, солнечных ожогах, аллергии, терактах и даже падениях астероидов.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ..........SECTION NATION........ -->
+    <section class="nation">
+      <div class="container nation-container">
+        <h3 class="nation__title">Кратко о Египте</h3>
+
+        <div class="nation__wrap">
+
+          <div class="nation__card-left">
+
+            <div class="nation_card-image">
+              <img src="img/nation/country.jpg" alt="country">
+            </div>
+            <div class="nation_card-content">
+              <p>
+                Ну что тут скажешь? Турция –– это пример того, как должен быть организован пляжный отдых. Практически идеальный, выстроенный годами и отточенный сервис, отсутствие виз, относительно быстрый перелет, теплое море и развлечения для всех возрастов. Иной раз можно даже не покидать территорию отеля, потому что там будет... ВСЕ!
+              </p>
+              <p>
+                Ну а если пляжный отдых надоел, то универсальный ответ –– Стамбул. С его старинными улочками, фантастическим шоппингом на Гранд Базаре, лучшей в мире уличной едой и запахами фирменных бубликов с тмином.
+              </p>
+            </div>
+          </div>
+
+          <div class="nation__card-right">
+
+            <div class="nation__card-body">
+
+              <div class="intro__card-convert nation__card-convert">
+                <div class="intro__card-supitem">Валюта</div>
+                <div class="intro__card-item nation__card-item">Египетский фунт (EGP)
+                  </div>
+                <div class="intro__card-subitem nation__card-subitem">≈ 5 &#8381</div>
+              </div>
+
+              <div class="intro__card-visa nation__card-visa">
+                <div class="intro__card-supitem">Виза</div>
+                <div class="intro__card-item nation__card-item">Не нужна
+                  </div>
+              </div>
+
+              <div class="intro__card-rating nation__card-rating">
+                <fieldset class="intro-rating">
+                  <legend class="intro-rating__caption">Красота пирамид</legend>
+                  <div class="intro-rating__group nation-rating__group">
+                    <input class="intro-rating__item nation-rating__item" type="radio" name="healt" value="1" aria-label="Так">
+                    <input class="intro-rating__item nation-rating__item" type="radio" name="healt" value="2" aria-label="Ничего">
+                    <input class="intro-rating__item nation-rating__item" type="radio" name="healt" value="3" aria-label="Норм">
+                    <input class="intro-rating__item nation-rating__item" type="radio" name="healt" value="4" aria-label="Лучше" checked>
+                    <input class="intro-rating__item nation-rating__item" type="radio" name="healt" value="5" aria-label="Отл">
+                  </div>
+                </fieldset>
+                <div class="nation__card-subitem">≈ 79 анджелиноджоулей</div>
+              </div>
+
+            </div>
+
+            <div class="nation__card-right card-right-dubl">
+              <div class="nation__card-case">
+                <div class="nation__card-img">
+                  <img src="img/nation/suitcase-icon.svg" alt="case">
+                </div>
+                <div class="nation__card-list">
+                  <span>В чемодан:</span>
+                  <p>
+                    головные уборы, средства от солнца, купальники и плавки
+                  </p>
+                </div>
+              </div>
+  
+              <div class="nation__card-case">
+                <div class="nation__card-img">
+                  <img src="img/nation/map-ico.svg" alt="case">
+                </div>
+                <div class="nation__card-list">
+                  <span>Что посетить?</span>
+                  <p>
+                    Каир
+                  </p>
+                  <p>[???]</p>
+                  <p>[???]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="nation__card-right-duble">
+            <div class="nation__card-case">
+              <div class="nation__card-img">
+                <img src="img/nation/suitcase-icon.svg" alt="case">
+              </div>
+              <div class="nation__card-list">
+                <span>В чемодан:</span>
+                <p>
+                  головные уборы, средства от солнца, купальники и плавки
+                </p>
+              </div>
+            </div>
+
+            <div class="nation__card-case">
+              <div class="nation__card-img">
+                <img src="img/nation/map-ico.svg" alt="case">
+              </div>
+              <div class="nation__card-list">
+                <span>Что посетить?</span>
+                <p>
+                  Каир, [???], [???].
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- .........SECTION ENUM......... -->
+    <section class="enum">
+      <div class="enum__wrap">
+        <div class="enum__grup">
+          <div class="enum__grup-body">
+            <div class="enum__grup-image">
+              <img src="img/enum/Group1.svg" alt="">
+            </div>
+            <button class="enum__grup-btn">Расчитать онлайн</button>
+          </div>
+          
+          <div class="enum__grup-arrow">
+            <img src="img/enum/en-arr.svg" alt="arrow">
+          </div>
+        </div>
+        <div class="enum__grup">
+          <div class="enum__grup-body">
+            <div class="enum__grup-image">
+              <img src="img/enum/Group2.svg" alt="">
+            </div>
+            <p>
+              Оплатить картой на сайте
+            </p>
+          </div>
+          <div class="enum__grup-arrow">
+            <img src="img/enum/en-arr.svg" alt="arrow">
+          </div>
+        </div>
+        <div class="enum__grup">
+          <div class="enum__grup-body">
+            <div class="enum__grup-image">
+              <img src="img/enum/Group3.svg" alt="">
+            </div>
+            <p>
+              Пришлем полис <br>на e-mail
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- .......SECTION INFO........ -->
+    <section class="info">
+      <div class="container info__container">
+        <div class="info__top">
+          <h2 class="info__title">О страховой компании ERV</h2>
+          <p>
+            На сегодняшний день ERV является единственной профильной компанией в России по страхованию путешествующих
+          </p>
+        </div>
+        <div class="info__record">
+          <div class="info__record-section">
+            <div class="info__record-item">
+              <div class="info__record-date">
+                <p>5,5 <span>млн</span> </p>
+              </div>
+              <div class="info__record-text">
+                <p>Застрахованных туристов в 2019</p>
+              </div>
+            </div>
+          </div>
+          <div class="info__record-section">
+            <div class="info__record-item">
+              <div class="info__record-date">
+                <p>1 
+                  <span>место</span> </p>
+              </div>
+              <div class="info__record-text">
+                <p>По страховым выплатам <br> <span>по данным ЦБ РФ</span>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="info__record-section">
+            <div class="info__record-item">
+              <div class="info__record-date">
+                <p>70 <span>тыс</span> </p>
+              </div>
+              <div class="info__record-text">
+                <p>Урегулированных страховых случаев 2019</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="intro__form-btn cls-btn">Рассчитать стоимость страховки</button>
+        
+      </div>
+    </section>
+    <!-- ....FOOTER.... -->
+    <footer class="footer">
+      <div class="footer__wrap">
+        <div class="footer__contacts">
+          <div class="footer__contacts-logo">
+            <a href="#!" class="footer__logo-link">
+              <img src="img/footer/logo-footer.png" alt="logo">
+            </a>
+          </div>
+          <div class="footer__contacts-element footer__contacts-element1">
+            <div class="footer__block-list">
+              <p>ERV</p>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#!">Продукты</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#!">Купить полис</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#!">Партнерам</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#!">О компании</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#!">Новости</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__contacts-element footer__contacts-element2">
+            <div class="footer__block-list">
+              <p>Нужна помощь?</p>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#!">Страховой случай</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#!">Как обратиться в ERV?</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#!">Карта сайта</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__contacts-element footer__contacts-element3">
+            <div class="footer__block-list">
+              <p>Полезная информация</p>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#!">Общие правила страхования в редакции от 7 мая 2019 г.</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#!">Полисные условия в редакции от 7 мая 2019 г.</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#!">Период охлаждения</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#!">Информация по страхованию</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#!">Базовый стандарт защиты прав получателей финансовых услуг</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#!">Политика обработки персональных данных</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__social">
+          <div class="footer__addres-links">
+            <a href="#!" class="footer__mob-logo">
+              <img src="img/footer/logo-footer.png" alt="logo">
+            </a>
+            <ul class="footer__addres-list">
+              <li class="footer__addres-item">
+                <p>Лицензия ЦБ РФ СЛ № 4009, СИ № 4009</p>
+              </li>
+              <li class="footer__addres-item">
+                <p>Москва, 4-й Добрынинский пер., д. 8, офис С14-0</p>
+              </li>
+              <li class="footer__addres-item">
+                <a href="tel:#" class="footer__phone-link">+7 (495) 626-58-00</a>
+              </li>
+              <li class="footer__addres-item">
+                <a href="mailto:#" class="footer__mail-link">info@erv.ru</a>
+              </li>
+              <li class="footer__addres-item">
+                <a href="#!" class="footer__site-link">erv.ru</a>
+              </li>
+  
+            </ul>
+          </div>
+          <div class="footer__social-links">
+            <ul class="footer__links-list">
+              <li class="footer__icon-item">
+                <a href="#1" class="footer__icon-link">
+                  <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="soc-icon" width="32" height="32" rx="4"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6185 16.6698C21.7965 16.8588 22.0295 17.1128 22.2375 17.2908C22.7315 17.7138 24.7535 19.6068 23.6125 20.0208C22.8393 20.1188 22.0592 20.1523 21.2805 20.1208C20.9601 20.1384 20.64 20.0803 20.3463 19.9512C20.0525 19.8221 19.7932 19.6257 19.5895 19.3778C19.2324 18.9373 18.8394 18.5272 18.4145 18.1518C17.6925 17.6068 17.4035 18.6048 17.3615 19.2458C17.3015 20.1698 17.1935 20.1058 15.7615 20.0938C14.8328 20.0345 13.9304 19.7613 13.1248 19.2955C12.3192 18.8298 11.6322 18.184 11.1175 17.4088C10.0655 15.9643 9.15881 14.4195 8.41047 12.7968C8.29947 12.5528 8.11047 12.2108 8.03647 11.9688C7.88347 11.4878 8.23648 11.4238 8.63648 11.4178C9.43007 11.3661 10.2266 11.3822 11.0175 11.4658C11.4175 11.6388 11.5575 12.3168 11.9115 13.0148C12.1595 13.5028 13.6115 16.2458 14.1015 15.2688C14.3888 14.2248 14.3833 13.1219 14.0855 12.0808C14.0082 11.9594 13.902 11.8591 13.7765 11.7888C13.6603 11.7393 13.5402 11.6995 13.4175 11.6698C13.3005 11.6228 13.3655 11.6568 13.3055 11.6058C13.5055 11.0458 14.4405 11.0058 15.1195 11.0058C15.7035 10.9988 16.9515 10.9478 17.2195 11.3488C17.6635 12.0088 16.8395 15.8268 17.8925 15.4278C18.4605 15.2128 19.5305 13.3278 19.8775 12.5278C20.3985 11.3278 20.1845 11.4418 21.2395 11.4348C22.0315 11.3912 22.8254 11.3912 23.6175 11.4348C24.3885 11.5838 23.7905 12.5138 23.4985 12.9858C23.2985 13.3148 22.4585 14.5128 22.2315 14.7608L21.4665 15.8368C21.3891 15.9712 21.3619 16.1286 21.3898 16.2812C21.4176 16.4337 21.4986 16.5714 21.6185 16.6698Z" fill="white"/>
+                    </svg>
+                </a>
+              </li>
+              <li class="footer__icon-item">
+                <a href="#1" class="footer__icon-link">
+                  <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="soc-icon" width="32" height="32" rx="4"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.809 16.3511H17.373V23.9971H14.187V16.3511H12V13.5401H14.06C14.0347 12.5963 14.0808 11.6519 14.198 10.7151L14.204 10.6911C15.162 7.01906 19.986 8.16406 20.071 8.18506V10.7521C20.071 10.7521 17.603 10.4691 17.429 11.9631V13.5431H20.08L19.809 16.3511Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__icon-item">
+                <a href="#1" class="footer__icon-link">
+                  <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="soc-icon" width="32" height="32" rx="4"/>
+                    <path d="M15.9956 8C13.8232 8 13.5512 8.01 12.6965 8.048C12.0333 8.06124 11.3771 8.18702 10.756 8.42C10.2249 8.62581 9.74241 8.9401 9.33946 9.34282C8.9365 9.74555 8.62189 10.2279 8.41569 10.759C8.18496 11.3806 8.06157 12.037 8.05079 12.7C8.0118 13.554 7.9978 13.827 7.9978 16C7.9978 18.173 8.0078 18.444 8.04679 19.3C8.06026 19.9633 8.18565 20.6195 8.41768 21.241C8.62306 21.7727 8.93724 22.2556 9.3401 22.6587C9.74295 23.0619 10.2256 23.3763 10.757 23.582C11.3785 23.815 12.035 23.9407 12.6985 23.954C13.5512 23.993 13.8242 24.002 15.9976 24.002C18.1709 24.002 18.4419 23.993 19.2966 23.954C19.9605 23.9407 20.6173 23.815 21.2391 23.582C21.77 23.3759 22.2521 23.0613 22.6547 22.6584C23.0573 22.2555 23.3716 21.7731 23.5774 21.242C23.8093 20.6201 23.935 19.9636 23.9493 19.3C23.9873 18.447 23.9973 18.175 23.9973 16C23.9973 13.825 23.9873 13.555 23.9493 12.7C23.9351 12.0367 23.8094 11.3805 23.5774 10.759C23.3722 10.2273 23.0581 9.7445 22.6552 9.3415C22.2523 8.93851 21.7696 8.62428 21.2381 8.419C20.6159 8.18639 19.9587 8.06094 19.2946 8.048C18.4429 8.01 18.1709 8 15.9956 8ZM15.2778 9.442C15.4907 9.442 15.7286 9.442 15.9956 9.442C18.131 9.442 18.3839 9.449 19.2276 9.488C19.7346 9.49391 20.2368 9.58693 20.7122 9.763C21.057 9.89619 21.3701 10.1 21.6315 10.3615C21.8929 10.6229 22.0967 10.9361 22.2298 11.281C22.4063 11.7565 22.4996 12.2588 22.5057 12.766C22.5437 13.61 22.5517 13.866 22.5517 15.998C22.5517 18.13 22.5437 18.386 22.5057 19.23C22.4996 19.7372 22.4063 20.2395 22.2298 20.715C22.0964 21.0596 21.8925 21.3726 21.6311 21.6338C21.3698 21.895 21.0568 22.0988 20.7122 22.232C20.2369 22.4085 19.7347 22.5019 19.2276 22.508C18.3839 22.546 18.128 22.554 15.9956 22.554C13.8632 22.554 13.6072 22.546 12.7635 22.508C12.2565 22.5014 11.7544 22.408 11.2789 22.232C10.9338 22.099 10.6205 21.8953 10.3589 21.6338C10.0974 21.3724 9.89346 21.059 9.76031 20.714C9.58429 20.2384 9.4913 19.7361 9.48538 19.229C9.4464 18.386 9.4394 18.129 9.4394 15.996C9.4394 13.863 9.4464 13.608 9.48538 12.764C9.4913 12.2569 9.58429 11.7546 9.76031 11.279C9.89346 10.934 10.0974 10.6206 10.3589 10.3592C10.6205 10.0977 10.9338 9.89396 11.2789 9.761C11.7542 9.58446 12.2564 9.49109 12.7635 9.485C13.5013 9.451 13.7872 9.441 15.2778 9.44V9.442ZM20.2644 10.77C20.0745 10.77 19.889 10.8263 19.7312 10.9318C19.5733 11.0373 19.4503 11.1872 19.3777 11.3626C19.305 11.538 19.286 11.7311 19.3231 11.9173C19.3601 12.1035 19.4515 12.2746 19.5857 12.4088C19.7199 12.5431 19.891 12.6345 20.0771 12.6716C20.2633 12.7086 20.4563 12.6896 20.6316 12.6169C20.807 12.5443 20.9569 12.4212 21.0623 12.2633C21.1678 12.1055 21.2241 11.9199 21.2241 11.73C21.2241 11.6039 21.1993 11.4791 21.151 11.3626C21.1028 11.2462 21.0321 11.1403 20.943 11.0512C20.8539 10.962 20.7481 10.8913 20.6316 10.8431C20.5152 10.7948 20.3904 10.77 20.2644 10.77ZM15.9956 11.892C15.1835 11.893 14.39 12.1348 13.7153 12.5868C13.0406 13.0387 12.515 13.6807 12.2049 14.4314C11.8948 15.1821 11.8142 16.0079 11.9732 16.8045C12.1323 17.601 12.5238 18.3325 13.0983 18.9066C13.6729 19.4806 14.4047 19.8713 15.2012 20.0294C15.9977 20.1875 16.8232 20.1059 17.5733 19.7948C18.3235 19.4837 18.9646 18.9572 19.4156 18.2818C19.8667 17.6063 20.1074 16.8123 20.1074 16C20.1074 15.4601 20.001 14.9255 19.7943 14.4268C19.5876 13.928 19.2846 13.475 18.9028 13.0934C18.5209 12.7119 18.0676 12.4094 17.5687 12.2033C17.0699 11.9971 16.5353 11.8913 15.9956 11.892ZM15.9956 13.333C16.5231 13.332 17.0391 13.4876 17.4782 13.78C17.9173 14.0725 18.2598 14.4887 18.4624 14.9759C18.665 15.4632 18.7185 15.9996 18.6162 16.5172C18.5139 17.0349 18.2603 17.5106 17.8876 17.8841C17.515 18.2576 17.0399 18.5121 16.5226 18.6154C16.0052 18.7187 15.4689 18.6662 14.9814 18.4645C14.4939 18.2628 14.0772 17.9209 13.784 17.4822C13.4908 17.0435 13.3343 16.5277 13.3343 16C13.3343 15.2935 13.6145 14.6159 14.1135 14.1159C14.6124 13.6159 15.2893 13.3343 15.9956 13.333Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__icon-item">
+                <a href="#1" class="footer__icon-link">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="soc-icon" width="32" height="32" rx="4"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0129 8.68842C17.3281 8.23536 16.5243 7.99579 15.7033 8.00006C14.6065 8.00291 13.5558 8.44128 12.7823 9.21875C12.0087 9.99623 11.5756 11.0491 11.5783 12.1459C11.5781 12.9669 11.8218 13.7696 12.2783 14.452C12.7348 15.1345 13.3836 15.666 14.1425 15.9793C14.9014 16.2926 15.7363 16.3736 16.5413 16.2119C17.3462 16.0503 18.0851 15.6532 18.6643 15.0712C19.2434 14.4892 19.6366 13.7483 19.7942 12.9425C19.9518 12.1367 19.8667 11.3023 19.5496 10.545C19.2324 9.78762 18.6976 9.14148 18.0129 8.68842ZM19.9831 22.8725C19.9831 22.5739 19.8649 22.2873 19.6544 22.0755L17.1666 19.5891C18.1399 19.4044 19.06 19.0059 19.8606 18.4225C20.0929 18.2347 20.2415 17.9627 20.274 17.6658C20.3064 17.3689 20.22 17.0712 20.0337 16.8377C19.9419 16.7217 19.828 16.6251 19.6986 16.5535C19.5692 16.4818 19.4269 16.4366 19.2798 16.4205C19.1328 16.4043 18.984 16.4175 18.8421 16.4592C18.7003 16.501 18.5681 16.5706 18.4533 16.6639C17.6259 17.2191 16.6478 17.5065 15.6515 17.4871C14.6485 17.5036 13.664 17.2166 12.8268 16.6639C12.712 16.5707 12.5798 16.5012 12.4379 16.4595C12.296 16.4178 12.1473 16.4046 12.0003 16.4208C11.8533 16.4369 11.711 16.4821 11.5815 16.5537C11.4521 16.6252 11.3382 16.7218 11.2464 16.8377C11.0603 17.0713 10.9742 17.369 11.0067 17.6659C11.0393 17.9628 11.188 18.2347 11.4202 18.4225C12.2474 19.0185 13.1977 19.4215 14.2011 19.6021L11.8347 22.0877C11.6282 22.3035 11.5155 22.5922 11.521 22.8908C11.5265 23.1895 11.6499 23.4738 11.8642 23.6818C11.9699 23.7846 12.0948 23.8655 12.2319 23.9197C12.369 23.974 12.5155 24.0005 12.6629 23.9979C12.8103 23.9952 12.9557 23.9633 13.0908 23.9042C13.2258 23.845 13.3478 23.7597 13.4496 23.6531L15.648 21.2989L18.0682 23.6696C18.172 23.7743 18.2956 23.8574 18.4317 23.9141C18.5679 23.9708 18.7138 24 18.8613 24C19.0088 24 19.1548 23.9708 19.2909 23.9141C19.427 23.8574 19.5506 23.7743 19.6544 23.6696C19.8649 23.4578 19.9831 23.1712 19.9831 22.8725ZM16.6579 13.5753C16.3749 13.7626 16.0426 13.8617 15.7033 13.86C15.4787 13.8594 15.2565 13.8146 15.0493 13.7282C14.8421 13.6417 14.6539 13.5153 14.4955 13.3562C14.3372 13.197 14.2117 13.0082 14.1263 12.8005C14.0409 12.5929 13.9972 12.3704 13.9978 12.1459C13.9978 11.8065 14.0986 11.4748 14.2873 11.1927C14.476 10.9107 14.7443 10.691 15.058 10.5615C15.3717 10.432 15.7168 10.3986 16.0495 10.4654C16.3822 10.5323 16.6876 10.6964 16.927 10.937C17.1664 11.1775 17.3289 11.4838 17.3941 11.8168C17.4593 12.1499 17.424 12.4948 17.293 12.8079C17.1619 13.1209 16.9409 13.388 16.6579 13.5753Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copy">
+          <p>
+            <span>&copy;</span> 2011—2020 Акционерное общество «ЕРВ Туристическое Страхование» — купить страховку туристическую
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+  <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
+  <script src="js/main.js"></script>
+  <script src=""></script>
+  <script>
+     flatpickr(".on-date", {
+    dateFormat: "d.m.Y",
+    "locale": "ru"
+
+    });
+     flatpickr(".off-date", {
+    dateFormat: "d.m.Y",
+    "locale": "ru"
+
+    });
+  </script>
+</body>
+</html>
