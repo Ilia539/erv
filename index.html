@@ -29,27 +29,27 @@
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
-              <a href="#!" class="header__link">Купить полис</a>
+              <a href="#home" class="header__link">Купить полис</a>
             </li>
 
             <li class="header__item">
-              <a href="#!" class="header__link">Продукты</a>
+              <a href="#product" class="header__link">Продукты</a>
             </li>
 
             <li class="header__item">
-              <a href="#!" class="header__link">О компании</a>
+              <a href="#about" class="header__link">О компании</a>
             </li>
 
             <li class="header__item">
-              <a href="#!" class="header__link">Страховой случай</a>
+              <a href="#incident" class="header__link header__linc">Страховой случай</a>
             </li>
 
             <li class="header__item">
-              <a href="#!" class="header__link">Партнерам</a>
+              <a href="#partners" class="header__link">Партнерам</a>
             </li>
 
             <li class="header__item">
-              <a href="#!" class="header__link">Контакты</a>
+              <a href="#contacts" class="header__link header__linc">Контакты</a>
             </li>
           </ul>
 
@@ -59,7 +59,7 @@
     </header>
     <!-- ...............SECTION  INTRO.......... -->
     <section class="intro">
-      <div class="intro__item">
+      <div class="intro__item" id="home">
         <picture>
           <source srcset="img/intro/bg-banner1.webp" type="image/webp">
               <img src="img/transparent/ffff-0.8.png" data-src="img/intro/bg-banner1.jpg" alt="tur" class="lazyload" loading="lazy">
@@ -201,7 +201,7 @@
       </div>
     </section>
     <!-- .......SECTION LIST............... -->
-    <section class="list">
+    <section class="list" id="product">
       <div class="container">
         <h3 class="list__title">Все ок, вы застрахованы.</h3>
 
@@ -268,7 +268,7 @@
       </div>
     </section>
     <!-- .......SECTION ADVICE........ -->
-    <section class="advice">
+    <section class="advice" id="about">
       <div class="advice__grayshe">
         <div class="container">
           <div class="advice__inner-grayish">
@@ -389,7 +389,7 @@
       </div>
 
 
-      <div class="advice__white">
+      <div class="advice__white" id="incident">
         <div class="container">
           <div class="advice__inner-white">
 
@@ -665,7 +665,7 @@
       </div>
     </section>
     <!-- .........SECTION ENUM......... -->
-    <section class="enum">
+    <section class="enum" id="partners">
       <div class="enum__wrap">
         <div class="enum__grup">
           <div class="enum__grup-body">
@@ -753,7 +753,7 @@
       </div>
     </section>
     <!-- ....FOOTER.... -->
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="footer__wrap">
         <div class="footer__contacts">
           <div class="footer__contacts-logo">
@@ -895,12 +895,11 @@
       </div>
     </footer>
   </div>
-
+  
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
   <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
   <script src="js/main.js"></script>
-  <script src=""></script>
   <script>
      flatpickr(".on-date", {
     dateFormat: "d.m.Y",
@@ -912,6 +911,8 @@
     "locale": "ru"
 
     });
+
+    
   </script>
 </body>
 </html>
